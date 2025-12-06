@@ -1,0 +1,36 @@
+name: Check Streaming Availability
+
+on:
+  schedule:
+    - cron: "0 3 * * *"  # daily at 03:00 UTC
+  workflow_dispatch:      # allow manual runs from the Actions tab
+
+jobs:
+  check-streaming:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+
+      - name: Run streaming checker
+        run: |
+          python check_streaming.py
+
+      - name: Commit changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Update streaming availability matrix"
+          commit_user_name: "Streaming Bot"
+          commit_user_email: "actions@github.com"
+          commit_author: "Streaming Bot <actions@github.com>"
