@@ -2,12 +2,14 @@ name: Check Streaming Availability
 
 on:
   schedule:
-    - cron: "0 3 * * *"  # daily at 03:00 UTC
-  workflow_dispatch:      # allow manual runs from the Actions tab
+    - cron: "0 3 * * *"
+  workflow_dispatch:
 
 jobs:
   check-streaming:
     runs-on: ubuntu-latest
+    env:
+      TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
 
     steps:
       - name: Check out repo
@@ -24,8 +26,7 @@ jobs:
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
 
       - name: Run streaming checker
-        run: |
-          python check_streaming.py
+        run: python check_streaming.py
 
       - name: Commit changes
         uses: stefanzweifel/git-auto-commit-action@v5
