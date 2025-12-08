@@ -1,0 +1,560 @@
+{
+  "Mulholland Drive (2001)": {
+    "title": "Mulholland Drive",
+    "year": 2001,
+    "netflix_us": false,
+    "prime_us_included": false,
+    "max_us": false,
+    "paramount_us_included": false,
+    "last_checked": "2025-12-08"
+  },
+  "There Will Be Blood (2007)": {
+    "title": "There Will Be Blood",
+    "year": 2007,
+    "netflix_us": false,
+    "prime_us_included": false,
+    "max_us": false,
+    "paramount_us_included": true,
+    "last_checked": "2025-12-08"
+  },
+  "In the Mood for Love (2000)": {
+    "title": "In the Mood for Love",
+    "year": 2000,
+    "netflix_us": false,
+    "prime_us_included": false,
+    "max_us": true,
+    "paramount_us_included": false,
+    "last_checked": "2025-12-08"
+  },
+  "Moonlight (2016)": {
+    "title": "Moonlight",
+    "year": 2016,
+    "netflix_us": false,
+    "prime_us_included": false,
+    "max_us": false,
+    "paramount_us_included": false,
+    "last_checked": "2025-12-08"
+  },
+  "Eternal Sunshine of the Spotless Mind (2004)": {
+    "title": "Eternal Sunshine of the Spotless Mind",
+    "year": 2004,
+    "netflix_us": false,
+    "prime_us_included": false,
+    "max_us": false,
+    "paramount_us_included": false,
+    "last_checked": "2025-12-08"
+  },
+  "Spirited Away (2001)": {
+    "title": "Spirited Away",
+    "year": 2001,
+    "netflix_us": false,
+    "prime_us_included": false,
+    "max_us": true,
+    "paramount_us_included": false,
+    "last_checked": "2025-12-08"
+  },
+  "The Zone of Interest (2023)": {
+    "title": "The Zone of Interest",
+    "year": 2023,
+    "netflix_us": false,
+    "prime_us_included": false,
+    "max_us": false,
+    "paramount_us_included": false,
+    "last_checked": "2025-12-08"
+  },
+  "Children of Men (2006)": {
+    "title": "Children of Men",
+    "year": 2006,
+    "netflix_us": false,
+    "prime_us_included": false,
+    "max_us": false,
+    "paramount_us_included": false,
+    "last_checked": "2025-12-08"
+  },
+  "City of God (2002)": {
+    "title": "City of God",
+    "year": 2002,
+    "netflix_us": false,
+    "prime_us_included": false,
+    "max_us": false,
+    "paramount_us_included": false,
+    "last_checked": "2025-12-08"
+  },
+  "Y tu mamá también (2001)": {
+    "title": "Y tu mamá también",
+    "year": 2001,
+    "netflix_us": false,
+    "prime_us_included": false,
+    "max_us": false,
+    "paramount_us_included": false,
+    "last_checked": "2025-12-08"
+  },
+  "Zodiac (2007)": {
+    "title": "Zodiac",
+    "year": 2007,
+    "netflix_us": true,
+    "prime_us_included": false,
+    "max_us": false,
+    "paramount_us_included": true,
+    "last_checked": "2025-12-08"
+  },
+  "The Royal Tenenbaums (2001)": {
+    "title": "The Royal Tenenbaums",
+    "year": 2001,
+    "netflix_us": false,
+    "prime_us_included": true,
+    "max_us": false,
+    "paramount_us_included": false,
+    "last_checked": "2025-12-08"
+  },
+  "Boyhood (2014)": {
+    "title": "Boyhood",
+    "year": 2014,
+    "netflix_us": true,
+    "prime_us_included": false,
+    "max_us": false,
+    "paramount_us_included": false,
+    "last_checked": "2025-12-08"
+  },
+  "Her (2013)": {
+    "title": "Her",
+    "year": 2013,
+    "netflix_us": false,
+    "prime_us_included": false,
+    "max_us": false,
+    "paramount_us_included": false,
+    "last_checked": "2025-12-08"
+  },
+  "Phantom Thread (2017)": {
+    "title": "Phantom Thread",
+    "year": 2017,
+    "netflix_us": true,
+    "prime_us_included": false,
+    "max_us": false,
+    "paramount_us_included": false,
+    "last_checked": "2025-12-08"
+  },
+  "Anatomy of a Fall (2023)": {
+    "title": "Anatomy of a Fall",
+    "year": 2023,
+    "netflix_us": false,
+    "prime_us_included": false,
+    "max_us": false,
+    "paramount_us_included": false,
+    "last_checked": "2025-12-08"
+  },
+  "Adaptation (2002)": {
+    "title": "Adaptation",
+    "year": 2002,
+    "netflix_us": false,
+    "prime_us_included": false,
+    "max_us": false,
+    "paramount_us_included": false,
+    "last_checked": "2025-12-08"
+  },
+  "Lost in Translation (2003)": {
+    "title": "Lost in Translation",
+    "year": 2003,
+    "netflix_us": false,
+    "prime_us_included": false,
+    "max_us": false,
+    "paramount_us_included": false,
+    "last_checked": "2025-12-08"
+  },
+  "Bridesmaids (2011)": {
+    "title": "Bridesmaids",
+    "year": 2011,
+    "netflix_us": true,
+    "prime_us_included": false,
+    "max_us": false,
+    "paramount_us_included": false,
+    "last_checked": "2025-12-08"
+  },
+  "A Separation (2011)": {
+    "title": "A Separation",
+    "year": 2011,
+    "netflix_us": false,
+    "prime_us_included": false,
+    "max_us": false,
+    "paramount_us_included": false,
+    "last_checked": "2025-12-08"
+  },
+  "A Prophet (2009)": {
+    "title": "A Prophet",
+    "year": 2009,
+    "netflix_us": false,
+    "prime_us_included": false,
+    "max_us": false,
+    "paramount_us_included": false,
+    "last_checked": "2025-12-08"
+  },
+  "A Serious Man (2009)": {
+    "title": "A Serious Man",
+    "year": 2009,
+    "netflix_us": false,
+    "prime_us_included": false,
+    "max_us": false,
+    "paramount_us_included": false,
+    "last_checked": "2025-12-08"
+  },
+  "Call Me by Your Name (2017)": {
+    "title": "Call Me by Your Name",
+    "year": 2017,
+    "netflix_us": false,
+    "prime_us_included": false,
+    "max_us": true,
+    "paramount_us_included": false,
+    "last_checked": "2025-12-08"
+  },
+  "Portrait of a Lady on Fire (2019)": {
+    "title": "Portrait of a Lady on Fire",
+    "year": 2019,
+    "netflix_us": false,
+    "prime_us_included": false,
+    "max_us": true,
+    "paramount_us_included": false,
+    "last_checked": "2025-12-08"
+  },
+  "Lady Bird (2017)": {
+    "title": "Lady Bird",
+    "year": 2017,
+    "netflix_us": false,
+    "prime_us_included": false,
+    "max_us": true,
+    "paramount_us_included": false,
+    "last_checked": "2025-12-08"
+  },
+  "Yi Yi (2000)": {
+    "title": "Yi Yi",
+    "year": 2000,
+    "netflix_us": false,
+    "prime_us_included": false,
+    "max_us": false,
+    "paramount_us_included": false,
+    "last_checked": "2025-12-08"
+  },
+  "Amélie (2001)": {
+    "title": "Amélie",
+    "year": 2001,
+    "netflix_us": false,
+    "prime_us_included": false,
+    "max_us": false,
+    "paramount_us_included": false,
+    "last_checked": "2025-12-08"
+  },
+  "The Master (2012)": {
+    "title": "The Master",
+    "year": 2012,
+    "netflix_us": false,
+    "prime_us_included": false,
+    "max_us": false,
+    "paramount_us_included": false,
+    "last_checked": "2025-12-08"
+  },
+  "Oldboy (2003)": {
+    "title": "Oldboy",
+    "year": 2003,
+    "netflix_us": false,
+    "prime_us_included": false,
+    "max_us": false,
+    "paramount_us_included": false,
+    "last_checked": "2025-12-08"
+  },
+  "Roma (2018)": {
+    "title": "Roma",
+    "year": 2018,
+    "netflix_us": true,
+    "prime_us_included": false,
+    "max_us": false,
+    "paramount_us_included": false,
+    "last_checked": "2025-12-08"
+  },
+  "The Lives of Others (2006)": {
+    "title": "The Lives of Others",
+    "year": 2006,
+    "netflix_us": false,
+    "prime_us_included": false,
+    "max_us": false,
+    "paramount_us_included": false,
+    "last_checked": "2025-12-08"
+  },
+  "Before Sunset (2004)": {
+    "title": "Before Sunset",
+    "year": 2004,
+    "netflix_us": false,
+    "prime_us_included": false,
+    "max_us": false,
+    "paramount_us_included": false,
+    "last_checked": "2025-12-08"
+  },
+  "12 Years a Slave (2013)": {
+    "title": "12 Years a Slave",
+    "year": 2013,
+    "netflix_us": false,
+    "prime_us_included": false,
+    "max_us": false,
+    "paramount_us_included": false,
+    "last_checked": "2025-12-08"
+  },
+  "The Favourite (2018)": {
+    "title": "The Favourite",
+    "year": 2018,
+    "netflix_us": false,
+    "prime_us_included": false,
+    "max_us": false,
+    "paramount_us_included": false,
+    "last_checked": "2025-12-08"
+  },
+  "Pan’s Labyrinth (2006)": {
+    "title": "Pan’s Labyrinth",
+    "year": 2006,
+    "netflix_us": false,
+    "prime_us_included": false,
+    "max_us": false,
+    "paramount_us_included": false,
+    "last_checked": "2025-12-08"
+  },
+  "Punch-Drunk Love (2002)": {
+    "title": "Punch-Drunk Love",
+    "year": 2002,
+    "netflix_us": false,
+    "prime_us_included": false,
+    "max_us": false,
+    "paramount_us_included": true,
+    "last_checked": "2025-12-08"
+  },
+  "Best in Show (2000)": {
+    "title": "Best in Show",
+    "year": 2000,
+    "netflix_us": false,
+    "prime_us_included": false,
+    "max_us": false,
+    "paramount_us_included": false,
+    "last_checked": "2025-12-08"
+  },
+  "Uncut Gems (2019)": {
+    "title": "Uncut Gems",
+    "year": 2019,
+    "netflix_us": false,
+    "prime_us_included": false,
+    "max_us": true,
+    "paramount_us_included": false,
+    "last_checked": "2025-12-08"
+  },
+  "Toni Erdmann (2016)": {
+    "title": "Toni Erdmann",
+    "year": 2016,
+    "netflix_us": false,
+    "prime_us_included": false,
+    "max_us": false,
+    "paramount_us_included": false,
+    "last_checked": "2025-12-08"
+  },
+  "Whiplash (2014)": {
+    "title": "Whiplash",
+    "year": 2014,
+    "netflix_us": true,
+    "prime_us_included": false,
+    "max_us": false,
+    "paramount_us_included": false,
+    "last_checked": "2025-12-08"
+  },
+  "Memento (2000)": {
+    "title": "Memento",
+    "year": 2000,
+    "netflix_us": false,
+    "prime_us_included": true,
+    "max_us": false,
+    "paramount_us_included": false,
+    "last_checked": "2025-12-08"
+  },
+  "Little Miss Sunshine (2006)": {
+    "title": "Little Miss Sunshine",
+    "year": 2006,
+    "netflix_us": false,
+    "prime_us_included": false,
+    "max_us": false,
+    "paramount_us_included": false,
+    "last_checked": "2025-12-08"
+  },
+  "Gone Girl (2014)": {
+    "title": "Gone Girl",
+    "year": 2014,
+    "netflix_us": false,
+    "prime_us_included": false,
+    "max_us": true,
+    "paramount_us_included": false,
+    "last_checked": "2025-12-08"
+  },
+  "Spotlight (2015)": {
+    "title": "Spotlight",
+    "year": 2015,
+    "netflix_us": false,
+    "prime_us_included": false,
+    "max_us": false,
+    "paramount_us_included": false,
+    "last_checked": "2025-12-08"
+  },
+  "Under the Skin (2013)": {
+    "title": "Under the Skin",
+    "year": 2013,
+    "netflix_us": false,
+    "prime_us_included": false,
+    "max_us": false,
+    "paramount_us_included": false,
+    "last_checked": "2025-12-08"
+  },
+  "Let the Right One In (2008)": {
+    "title": "Let the Right One In",
+    "year": 2008,
+    "netflix_us": false,
+    "prime_us_included": true,
+    "max_us": false,
+    "paramount_us_included": false,
+    "last_checked": "2025-12-08"
+  },
+  "Carol (2015)": {
+    "title": "Carol",
+    "year": 2015,
+    "netflix_us": false,
+    "prime_us_included": false,
+    "max_us": true,
+    "paramount_us_included": false,
+    "last_checked": "2025-12-08"
+  },
+  "The Florida Project (2017)": {
+    "title": "The Florida Project",
+    "year": 2017,
+    "netflix_us": false,
+    "prime_us_included": false,
+    "max_us": true,
+    "paramount_us_included": false,
+    "last_checked": "2025-12-08"
+  },
+  "Amour (2012)": {
+    "title": "Amour",
+    "year": 2012,
+    "netflix_us": false,
+    "prime_us_included": false,
+    "max_us": false,
+    "paramount_us_included": false,
+    "last_checked": "2025-12-08"
+  },
+  "O Brother, Where Art Thou? (2000)": {
+    "title": "O Brother, Where Art Thou?",
+    "year": 2000,
+    "netflix_us": false,
+    "prime_us_included": false,
+    "max_us": false,
+    "paramount_us_included": false,
+    "last_checked": "2025-12-08"
+  },
+  "Aftersun (2022)": {
+    "title": "Aftersun",
+    "year": 2022,
+    "netflix_us": false,
+    "prime_us_included": false,
+    "max_us": false,
+    "paramount_us_included": false,
+    "last_checked": "2025-12-08"
+  },
+  "The Tree of Life (2011)": {
+    "title": "The Tree of Life",
+    "year": 2011,
+    "netflix_us": false,
+    "prime_us_included": false,
+    "max_us": false,
+    "paramount_us_included": false,
+    "last_checked": "2025-12-08"
+  },
+  "Volver (2006)": {
+    "title": "Volver",
+    "year": 2006,
+    "netflix_us": false,
+    "prime_us_included": false,
+    "max_us": false,
+    "paramount_us_included": false,
+    "last_checked": "2025-12-08"
+  },
+  "The Act of Killing (2012)": {
+    "title": "The Act of Killing",
+    "year": 2012,
+    "netflix_us": false,
+    "prime_us_included": false,
+    "max_us": false,
+    "paramount_us_included": false,
+    "last_checked": "2025-12-08"
+  },
+  "Inside Llewyn Davis (2013)": {
+    "title": "Inside Llewyn Davis",
+    "year": 2013,
+    "netflix_us": false,
+    "prime_us_included": false,
+    "max_us": false,
+    "paramount_us_included": false,
+    "last_checked": "2025-12-08"
+  },
+  "Past Lives (2023)": {
+    "title": "Past Lives",
+    "year": 2023,
+    "netflix_us": false,
+    "prime_us_included": false,
+    "max_us": true,
+    "paramount_us_included": false,
+    "last_checked": "2025-12-08"
+  },
+  "The Gleaners & I (2000)": {
+    "title": "The Gleaners & I",
+    "year": 2000,
+    "netflix_us": false,
+    "prime_us_included": false,
+    "max_us": false,
+    "paramount_us_included": false,
+    "last_checked": "2025-12-08"
+  },
+  "Frances Ha (2012)": {
+    "title": "Frances Ha",
+    "year": 2012,
+    "netflix_us": true,
+    "prime_us_included": false,
+    "max_us": false,
+    "paramount_us_included": false,
+    "last_checked": "2025-12-08"
+  },
+  "Fish Tank (2009)": {
+    "title": "Fish Tank",
+    "year": 2009,
+    "netflix_us": false,
+    "prime_us_included": false,
+    "max_us": false,
+    "paramount_us_included": false,
+    "last_checked": "2025-12-08"
+  },
+  "The Worst Person in the World (2021)": {
+    "title": "The Worst Person in the World",
+    "year": 2021,
+    "netflix_us": false,
+    "prime_us_included": false,
+    "max_us": false,
+    "paramount_us_included": false,
+    "last_checked": "2025-12-08"
+  },
+  "Grizzly Man (2005)": {
+    "title": "Grizzly Man",
+    "year": 2005,
+    "netflix_us": false,
+    "prime_us_included": true,
+    "max_us": false,
+    "paramount_us_included": false,
+    "last_checked": "2025-12-08"
+  },
+  "Memories of Murder (2003)": {
+    "title": "Memories of Murder",
+    "year": 2003,
+    "netflix_us": false,
+    "prime_us_included": false,
+    "max_us": false,
+    "paramount_us_included": false,
+    "last_checked": "2025-12-08"
+  }
+}
