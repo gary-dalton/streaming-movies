@@ -178,16 +178,21 @@ def update_status(movies, previous_status):
         prime = bool(avail.get("prime_us_included", False))
         max_ = bool(avail.get("max_us", False))
         paramount = bool(avail.get("paramount_us_included", False))
+        watched = bool(movie.get("watched", False))
+        watched_date = movie.get("watched_date")
 
         new_entry = {
             "title": movie["title"],
             "year": movie["year"],
+            "watched": watched,
+            "watched_date": watched_date,
             "netflix_us": netflix,
             "prime_us_included": prime,
             "max_us": max_,
             "paramount_us_included": paramount,
             "last_checked": today_str,
         }
+
         new_status[mid] = new_entry
 
         # Compare with previous run
@@ -217,18 +222,26 @@ def generate_markdown(status):
     lines.append(f"_Last updated: {date.today().isoformat()}_\n")
     lines.append("")
     lines.append(
-        "| Title | Year | Netflix (US) | Prime (US) | Max (US) | Paramount+ (US) | Last Checked |"
+        "| Watched | Title | Year | Netflix (US) | Prime (US) | Max (US) | Paramount+ (US) | Last Checked |"
     )
     lines.append(
-        "| --- | --- | :---: | :---: | :---: | :---: | --- |"
+        "| :---: | --- | --- | :---: | :---: | :---: | :---: | --- |"
     )
+
 
     def icon(val):
         return "✅" if val else "❌"
+    def watched_icon(w):
+        return "✅" if w else "—"
 
     for r in rows:
+        wd = r.get("watched_date") or ""
+        watched_cell = watched_icon(r.get("watched", False))
+        if wd:
+            watched_cell = f"{watched_cell} ({wd})"
+
         lines.append(
-            f"| {r['title']} | {r['year']} | "
+            f"| {watched_cell} | {r['title']} | {r['year']} | "
             f"{icon(r['netflix_us'])} | "
             f"{icon(r['prime_us_included'])} | "
             f"{icon(r['max_us'])} | "

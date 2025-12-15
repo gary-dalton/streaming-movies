@@ -10,7 +10,7 @@
   { "title": "Children of Men", "year": 2006 },
   { "title": "City of God", "year": 2002 },
   { "title": "Y tu mamá también", "year": 2001 },
-  { "title": "Zodiac", "year": 2007 },
+  { "title": "Zodiac", "year": 2007, "watched": true, "watched_date": "2025-12-10" },
   { "title": "The Royal Tenenbaums", "year": 2001 },
   { "title": "Boyhood", "year": 2014 },
   { "title": "Her", "year": 2013 },
@@ -18,7 +18,7 @@
   { "title": "Anatomy of a Fall", "year": 2023 },
   { "title": "Adaptation", "year": 2002 },
   { "title": "Lost in Translation", "year": 2003 },
-  { "title": "Bridesmaids", "year": 2011 },
+  { "title": "Bridesmaids", "year": 2011 , "watched": true, "watched_date": "2025-12-10" },
   { "title": "A Separation", "year": 2011 },
   { "title": "A Prophet", "year": 2009 },
   { "title": "A Serious Man", "year": 2009 },
@@ -40,8 +40,8 @@
   { "title": "Best in Show", "year": 2000 },
   { "title": "Uncut Gems", "year": 2019 },
   { "title": "Toni Erdmann", "year": 2016 },
-  { "title": "Whiplash", "year": 2014 },
-  { "title": "Memento", "year": 2000 },
+  { "title": "Whiplash", "year": 2014, "watched": true, "watched_date": "2025-12-10" },
+  { "title": "Memento", "year": 2000, "watched": true, "watched_date": "2025-12-10" },
   { "title": "Little Miss Sunshine", "year": 2006 },
   { "title": "Gone Girl", "year": 2014 },
   { "title": "Spotlight", "year": 2015 },
@@ -62,5 +62,6 @@
   { "title": "Fish Tank", "year": 2009 },
   { "title": "The Worst Person in the World", "year": 2021 },
   { "title": "Grizzly Man", "year": 2005 },
-  { "title": "Memories of Murder", "year": 2003 }
+  { "title": "Memories of Murder", "year": 2003 },
+  { "title": "CryptoZoo", "year": 2021 }
 ]
