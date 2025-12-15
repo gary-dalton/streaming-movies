@@ -2,6 +2,8 @@
   "Mulholland Drive (2001)": {
     "title": "Mulholland Drive",
     "year": 2001,
+    "watched": false,
+    "watched_date": null,
     "netflix_us": false,
     "prime_us_included": false,
     "max_us": false,
@@ -11,6 +13,8 @@
   "There Will Be Blood (2007)": {
     "title": "There Will Be Blood",
     "year": 2007,
+    "watched": false,
+    "watched_date": null,
     "netflix_us": false,
     "prime_us_included": false,
     "max_us": false,
@@ -20,6 +24,8 @@
   "In the Mood for Love (2000)": {
     "title": "In the Mood for Love",
     "year": 2000,
+    "watched": false,
+    "watched_date": null,
     "netflix_us": false,
     "prime_us_included": false,
     "max_us": true,
@@ -29,6 +35,8 @@
   "Moonlight (2016)": {
     "title": "Moonlight",
     "year": 2016,
+    "watched": false,
+    "watched_date": null,
     "netflix_us": false,
     "prime_us_included": false,
     "max_us": false,
@@ -38,6 +46,8 @@
   "Eternal Sunshine of the Spotless Mind (2004)": {
     "title": "Eternal Sunshine of the Spotless Mind",
     "year": 2004,
+    "watched": false,
+    "watched_date": null,
     "netflix_us": false,
     "prime_us_included": false,
     "max_us": false,
@@ -47,6 +57,8 @@
   "Spirited Away (2001)": {
     "title": "Spirited Away",
     "year": 2001,
+    "watched": false,
+    "watched_date": null,
     "netflix_us": false,
     "prime_us_included": false,
     "max_us": true,
@@ -56,6 +68,8 @@
   "The Zone of Interest (2023)": {
     "title": "The Zone of Interest",
     "year": 2023,
+    "watched": false,
+    "watched_date": null,
     "netflix_us": false,
     "prime_us_included": false,
     "max_us": false,
@@ -65,6 +79,8 @@
   "Children of Men (2006)": {
     "title": "Children of Men",
     "year": 2006,
+    "watched": false,
+    "watched_date": null,
     "netflix_us": false,
     "prime_us_included": false,
     "max_us": false,
@@ -74,6 +90,8 @@
   "City of God (2002)": {
     "title": "City of God",
     "year": 2002,
+    "watched": false,
+    "watched_date": null,
     "netflix_us": false,
     "prime_us_included": false,
     "max_us": false,
@@ -83,6 +101,8 @@
   "Y tu mamá también (2001)": {
     "title": "Y tu mamá también",
     "year": 2001,
+    "watched": false,
+    "watched_date": null,
     "netflix_us": false,
     "prime_us_included": false,
     "max_us": false,
@@ -92,6 +112,8 @@
   "Zodiac (2007)": {
     "title": "Zodiac",
     "year": 2007,
+    "watched": true,
+    "watched_date": "2025-12-10",
     "netflix_us": true,
     "prime_us_included": false,
     "max_us": false,
@@ -101,6 +123,8 @@
   "The Royal Tenenbaums (2001)": {
     "title": "The Royal Tenenbaums",
     "year": 2001,
+    "watched": false,
+    "watched_date": null,
     "netflix_us": false,
     "prime_us_included": true,
     "max_us": false,
@@ -110,6 +134,8 @@
   "Boyhood (2014)": {
     "title": "Boyhood",
     "year": 2014,
+    "watched": false,
+    "watched_date": null,
     "netflix_us": true,
     "prime_us_included": false,
     "max_us": false,
@@ -119,6 +145,8 @@
   "Her (2013)": {
     "title": "Her",
     "year": 2013,
+    "watched": false,
+    "watched_date": null,
     "netflix_us": false,
     "prime_us_included": false,
     "max_us": false,
@@ -128,6 +156,8 @@
   "Phantom Thread (2017)": {
     "title": "Phantom Thread",
     "year": 2017,
+    "watched": false,
+    "watched_date": null,
     "netflix_us": true,
     "prime_us_included": false,
     "max_us": false,
@@ -137,6 +167,8 @@
   "Anatomy of a Fall (2023)": {
     "title": "Anatomy of a Fall",
     "year": 2023,
+    "watched": false,
+    "watched_date": null,
     "netflix_us": false,
     "prime_us_included": false,
     "max_us": false,
@@ -146,6 +178,8 @@
   "Adaptation (2002)": {
     "title": "Adaptation",
     "year": 2002,
+    "watched": false,
+    "watched_date": null,
     "netflix_us": false,
     "prime_us_included": false,
     "max_us": false,
@@ -155,6 +189,8 @@
   "Lost in Translation (2003)": {
     "title": "Lost in Translation",
     "year": 2003,
+    "watched": false,
+    "watched_date": null,
     "netflix_us": false,
     "prime_us_included": false,
     "max_us": false,
@@ -164,6 +200,8 @@
   "Bridesmaids (2011)": {
     "title": "Bridesmaids",
     "year": 2011,
+    "watched": true,
+    "watched_date": "2025-12-10",
     "netflix_us": true,
     "prime_us_included": false,
     "max_us": false,
@@ -173,6 +211,8 @@
   "A Separation (2011)": {
     "title": "A Separation",
     "year": 2011,
+    "watched": false,
+    "watched_date": null,
     "netflix_us": false,
     "prime_us_included": false,
     "max_us": false,
@@ -182,6 +222,8 @@
   "A Prophet (2009)": {
     "title": "A Prophet",
     "year": 2009,
+    "watched": false,
+    "watched_date": null,
     "netflix_us": false,
     "prime_us_included": false,
     "max_us": false,
@@ -191,6 +233,8 @@
   "A Serious Man (2009)": {
     "title": "A Serious Man",
     "year": 2009,
+    "watched": false,
+    "watched_date": null,
     "netflix_us": false,
     "prime_us_included": false,
     "max_us": false,
@@ -200,6 +244,8 @@
   "Call Me by Your Name (2017)": {
     "title": "Call Me by Your Name",
     "year": 2017,
+    "watched": false,
+    "watched_date": null,
     "netflix_us": false,
     "prime_us_included": false,
     "max_us": true,
@@ -209,6 +255,8 @@
   "Portrait of a Lady on Fire (2019)": {
     "title": "Portrait of a Lady on Fire",
     "year": 2019,
+    "watched": false,
+    "watched_date": null,
     "netflix_us": false,
     "prime_us_included": false,
     "max_us": true,
@@ -218,6 +266,8 @@
   "Lady Bird (2017)": {
     "title": "Lady Bird",
     "year": 2017,
+    "watched": false,
+    "watched_date": null,
     "netflix_us": false,
     "prime_us_included": false,
     "max_us": true,
@@ -227,6 +277,8 @@
   "Yi Yi (2000)": {
     "title": "Yi Yi",
     "year": 2000,
+    "watched": false,
+    "watched_date": null,
     "netflix_us": false,
     "prime_us_included": false,
     "max_us": false,
@@ -236,6 +288,8 @@
   "Amélie (2001)": {
     "title": "Amélie",
     "year": 2001,
+    "watched": false,
+    "watched_date": null,
     "netflix_us": false,
     "prime_us_included": false,
     "max_us": false,
@@ -245,6 +299,8 @@
   "The Master (2012)": {
     "title": "The Master",
     "year": 2012,
+    "watched": false,
+    "watched_date": null,
     "netflix_us": false,
     "prime_us_included": false,
     "max_us": false,
@@ -254,6 +310,8 @@
   "Oldboy (2003)": {
     "title": "Oldboy",
     "year": 2003,
+    "watched": false,
+    "watched_date": null,
     "netflix_us": false,
     "prime_us_included": false,
     "max_us": false,
@@ -263,6 +321,8 @@
   "Roma (2018)": {
     "title": "Roma",
     "year": 2018,
+    "watched": false,
+    "watched_date": null,
     "netflix_us": true,
     "prime_us_included": false,
     "max_us": false,
@@ -272,6 +332,8 @@
   "The Lives of Others (2006)": {
     "title": "The Lives of Others",
     "year": 2006,
+    "watched": false,
+    "watched_date": null,
     "netflix_us": false,
     "prime_us_included": false,
     "max_us": false,
@@ -281,6 +343,8 @@
   "Before Sunset (2004)": {
     "title": "Before Sunset",
     "year": 2004,
+    "watched": false,
+    "watched_date": null,
     "netflix_us": false,
     "prime_us_included": false,
     "max_us": false,
@@ -290,6 +354,8 @@
   "12 Years a Slave (2013)": {
     "title": "12 Years a Slave",
     "year": 2013,
+    "watched": false,
+    "watched_date": null,
     "netflix_us": false,
     "prime_us_included": false,
     "max_us": false,
@@ -299,6 +365,8 @@
   "The Favourite (2018)": {
     "title": "The Favourite",
     "year": 2018,
+    "watched": false,
+    "watched_date": null,
     "netflix_us": false,
     "prime_us_included": false,
     "max_us": false,
@@ -308,6 +376,8 @@
   "Pan’s Labyrinth (2006)": {
     "title": "Pan’s Labyrinth",
     "year": 2006,
+    "watched": false,
+    "watched_date": null,
     "netflix_us": false,
     "prime_us_included": false,
     "max_us": false,
@@ -317,6 +387,8 @@
   "Punch-Drunk Love (2002)": {
     "title": "Punch-Drunk Love",
     "year": 2002,
+    "watched": false,
+    "watched_date": null,
     "netflix_us": false,
     "prime_us_included": false,
     "max_us": false,
@@ -326,6 +398,8 @@
   "Best in Show (2000)": {
     "title": "Best in Show",
     "year": 2000,
+    "watched": false,
+    "watched_date": null,
     "netflix_us": false,
     "prime_us_included": false,
     "max_us": false,
@@ -335,6 +409,8 @@
   "Uncut Gems (2019)": {
     "title": "Uncut Gems",
     "year": 2019,
+    "watched": false,
+    "watched_date": null,
     "netflix_us": false,
     "prime_us_included": false,
     "max_us": true,
@@ -344,6 +420,8 @@
   "Toni Erdmann (2016)": {
     "title": "Toni Erdmann",
     "year": 2016,
+    "watched": false,
+    "watched_date": null,
     "netflix_us": false,
     "prime_us_included": false,
     "max_us": false,
@@ -353,6 +431,8 @@
   "Whiplash (2014)": {
     "title": "Whiplash",
     "year": 2014,
+    "watched": true,
+    "watched_date": "2025-12-10",
     "netflix_us": true,
     "prime_us_included": false,
     "max_us": false,
@@ -362,6 +442,8 @@
   "Memento (2000)": {
     "title": "Memento",
     "year": 2000,
+    "watched": true,
+    "watched_date": "2025-12-10",
     "netflix_us": false,
     "prime_us_included": true,
     "max_us": false,
@@ -371,6 +453,8 @@
   "Little Miss Sunshine (2006)": {
     "title": "Little Miss Sunshine",
     "year": 2006,
+    "watched": false,
+    "watched_date": null,
     "netflix_us": false,
     "prime_us_included": false,
     "max_us": false,
@@ -380,6 +464,8 @@
   "Gone Girl (2014)": {
     "title": "Gone Girl",
     "year": 2014,
+    "watched": false,
+    "watched_date": null,
     "netflix_us": false,
     "prime_us_included": false,
     "max_us": true,
@@ -389,6 +475,8 @@
   "Spotlight (2015)": {
     "title": "Spotlight",
     "year": 2015,
+    "watched": false,
+    "watched_date": null,
     "netflix_us": false,
     "prime_us_included": false,
     "max_us": false,
@@ -398,6 +486,8 @@
   "Under the Skin (2013)": {
     "title": "Under the Skin",
     "year": 2013,
+    "watched": false,
+    "watched_date": null,
     "netflix_us": false,
     "prime_us_included": false,
     "max_us": false,
@@ -407,6 +497,8 @@
   "Let the Right One In (2008)": {
     "title": "Let the Right One In",
     "year": 2008,
+    "watched": false,
+    "watched_date": null,
     "netflix_us": false,
     "prime_us_included": true,
     "max_us": false,
@@ -416,6 +508,8 @@
   "Carol (2015)": {
     "title": "Carol",
     "year": 2015,
+    "watched": false,
+    "watched_date": null,
     "netflix_us": false,
     "prime_us_included": false,
     "max_us": true,
@@ -425,6 +519,8 @@
   "The Florida Project (2017)": {
     "title": "The Florida Project",
     "year": 2017,
+    "watched": false,
+    "watched_date": null,
     "netflix_us": false,
     "prime_us_included": false,
     "max_us": true,
@@ -434,6 +530,8 @@
   "Amour (2012)": {
     "title": "Amour",
     "year": 2012,
+    "watched": false,
+    "watched_date": null,
     "netflix_us": false,
     "prime_us_included": false,
     "max_us": false,
@@ -443,6 +541,8 @@
   "O Brother, Where Art Thou? (2000)": {
     "title": "O Brother, Where Art Thou?",
     "year": 2000,
+    "watched": false,
+    "watched_date": null,
     "netflix_us": false,
     "prime_us_included": false,
     "max_us": false,
@@ -452,6 +552,8 @@
   "Aftersun (2022)": {
     "title": "Aftersun",
     "year": 2022,
+    "watched": false,
+    "watched_date": null,
     "netflix_us": false,
     "prime_us_included": false,
     "max_us": false,
@@ -461,6 +563,8 @@
   "The Tree of Life (2011)": {
     "title": "The Tree of Life",
     "year": 2011,
+    "watched": false,
+    "watched_date": null,
     "netflix_us": false,
     "prime_us_included": false,
     "max_us": false,
@@ -470,6 +574,8 @@
   "Volver (2006)": {
     "title": "Volver",
     "year": 2006,
+    "watched": false,
+    "watched_date": null,
     "netflix_us": false,
     "prime_us_included": false,
     "max_us": false,
@@ -479,6 +585,8 @@
   "The Act of Killing (2012)": {
     "title": "The Act of Killing",
     "year": 2012,
+    "watched": false,
+    "watched_date": null,
     "netflix_us": false,
     "prime_us_included": false,
     "max_us": false,
@@ -488,6 +596,8 @@
   "Inside Llewyn Davis (2013)": {
     "title": "Inside Llewyn Davis",
     "year": 2013,
+    "watched": false,
+    "watched_date": null,
     "netflix_us": false,
     "prime_us_included": false,
     "max_us": false,
@@ -497,6 +607,8 @@
   "Past Lives (2023)": {
     "title": "Past Lives",
     "year": 2023,
+    "watched": false,
+    "watched_date": null,
     "netflix_us": false,
     "prime_us_included": false,
     "max_us": true,
@@ -506,6 +618,8 @@
   "The Gleaners & I (2000)": {
     "title": "The Gleaners & I",
     "year": 2000,
+    "watched": false,
+    "watched_date": null,
     "netflix_us": false,
     "prime_us_included": false,
     "max_us": false,
@@ -515,6 +629,8 @@
   "Frances Ha (2012)": {
     "title": "Frances Ha",
     "year": 2012,
+    "watched": false,
+    "watched_date": null,
     "netflix_us": true,
     "prime_us_included": false,
     "max_us": false,
@@ -524,6 +640,8 @@
   "Fish Tank (2009)": {
     "title": "Fish Tank",
     "year": 2009,
+    "watched": false,
+    "watched_date": null,
     "netflix_us": false,
     "prime_us_included": false,
     "max_us": false,
@@ -533,6 +651,8 @@
   "The Worst Person in the World (2021)": {
     "title": "The Worst Person in the World",
     "year": 2021,
+    "watched": false,
+    "watched_date": null,
     "netflix_us": false,
     "prime_us_included": false,
     "max_us": false,
@@ -542,6 +662,8 @@
   "Grizzly Man (2005)": {
     "title": "Grizzly Man",
     "year": 2005,
+    "watched": false,
+    "watched_date": null,
     "netflix_us": false,
     "prime_us_included": true,
     "max_us": false,
@@ -551,6 +673,19 @@
   "Memories of Murder (2003)": {
     "title": "Memories of Murder",
     "year": 2003,
+    "watched": false,
+    "watched_date": null,
+    "netflix_us": false,
+    "prime_us_included": false,
+    "max_us": false,
+    "paramount_us_included": false,
+    "last_checked": "2025-12-15"
+  },
+  "CryptoZoo (2021)": {
+    "title": "CryptoZoo",
+    "year": 2021,
+    "watched": false,
+    "watched_date": null,
     "netflix_us": false,
     "prime_us_included": false,
     "max_us": false,
