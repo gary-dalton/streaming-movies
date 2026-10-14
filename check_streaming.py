@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 import json
 import os
+import re
+import sys
 from pathlib import Path
 from datetime import date
 
@@ -13,6 +15,39 @@ OUTPUT_MARKDOWN = Path("streaming_matrix.md")
 TMDB_API_KEY = os.getenv("TMDB_API_KEY")
 TMDB_BASE_URL = "https://api.themoviedb.org/3"
 WATCH_REGION = "US"
+
+# Abort without saving when more than this share of movies can't be checked,
+# so an outage or bad API key doesn't overwrite good data.
+MAX_FAILURE_RATIO = 0.5
+
+# Exact TMDB provider names (after normalize_provider_name) that count as each
+# service. Exact matching keeps out add-on channels such as "Max Amazon Channel",
+# "Paramount+ Amazon Channel" and lookalikes such as "Cinemax".
+SERVICE_PROVIDER_NAMES = {
+    "netflix_us": {
+        "netflix",
+        "netflix basic with ads",
+        "netflix standard with ads",
+    },
+    "prime_us_included": {
+        "amazon prime video",
+        "amazon prime video with ads",
+    },
+    "max_us": {
+        "max",
+        "hbo max",
+    },
+    "paramount_us_included": {
+        "paramount plus",
+        "paramount plus with showtime",
+        "paramount plus essential",
+        "paramount plus premium",
+    },
+}
+
+
+class LookupFailed(Exception):
+    """A TMDB request failed, so availability is unknown (not "unavailable")."""
 
 
 # ---------- helpers ----------
@@ -61,7 +96,8 @@ def tmdb_get(path, params=None):
 
 def find_movie_id_tmdb(title, year, region=WATCH_REGION):
     """
-    Use TMDB's /search/movie to find a movie ID by title + year. :contentReference[oaicite:4]{index=4}
+    Use TMDB's /search/movie to find a movie ID by title + year.
+    Returns None if TMDB has no match; raises LookupFailed if the request fails.
     """
     try:
         data = tmdb_get(
@@ -74,9 +110,8 @@ def find_movie_id_tmdb(title, year, region=WATCH_REGION):
                 "page": 1,
             },
         )
-    except Exception as e:
-        print(f"[WARN] TMDB search failed for {title} ({year}): {e}")
-        return None
+    except requests.RequestException as e:
+        raise LookupFailed(f"TMDB search failed for {title} ({year}): {e}") from e
 
     results = data.get("results", [])
     if not results:
@@ -95,14 +130,14 @@ def find_movie_id_tmdb(title, year, region=WATCH_REGION):
 
 def get_movie_providers_tmdb(movie_id, region=WATCH_REGION):
     """
-    Use TMDB's /movie/{movie_id}/watch/providers. :contentReference[oaicite:5]{index=5}
-    Returns a list of provider objects (flatrate + ads) in that region.
+    Use TMDB's /movie/{movie_id}/watch/providers.
+    Returns a list of provider objects (flatrate + ads) in that region;
+    raises LookupFailed if the request fails.
     """
     try:
         data = tmdb_get(f"/movie/{movie_id}/watch/providers")
-    except Exception as e:
-        print(f"[WARN] TMDB providers failed for movie_id={movie_id}: {e}")
-        return []
+    except requests.RequestException as e:
+        raise LookupFailed(f"TMDB providers failed for movie_id={movie_id}: {e}") from e
 
     results = data.get("results", {})
     region_info = results.get(region)
@@ -118,7 +153,9 @@ def get_movie_providers_tmdb(movie_id, region=WATCH_REGION):
 
 
 def normalize_provider_name(name: str) -> str:
-    return name.strip().lower()
+    # "Paramount+ with Showtime" -> "paramount plus with showtime"
+    name = name.lower().replace("+", " plus ")
+    return re.sub(r"\s+", " ", name).strip()
 
 
 def check_movie_availability(title, year):
@@ -127,6 +164,7 @@ def check_movie_availability(title, year):
     - Finds TMDB movie ID
     - Fetches watch providers for US
     - Checks for Netflix, Amazon Prime, Max (HBO Max), Paramount+
+    Raises LookupFailed if TMDB couldn't be reached.
     """
     movie_id = find_movie_id_tmdb(title, year)
     if not movie_id:
@@ -141,21 +179,9 @@ def check_movie_availability(title, year):
     providers = get_movie_providers_tmdb(movie_id)
     names = {normalize_provider_name(p.get("provider_name", "")) for p in providers}
 
-    def has_substring(sub):
-        sub = sub.lower()
-        return any(sub in name for name in names)
-
-    # Heuristics based on provider_name
-    netflix = has_substring("netflix")
-    prime = has_substring("amazon prime video") or has_substring("prime video")
-    max_ = has_substring("max") or has_substring("hbo max")
-    paramount = has_substring("paramount+") or has_substring("paramount plus")
-
     return {
-        "netflix_us": netflix,
-        "prime_us_included": prime,
-        "max_us": max_,
-        "paramount_us_included": paramount,
+        key: bool(names & accepted)
+        for key, accepted in SERVICE_PROVIDER_NAMES.items()
     }
 
 
@@ -168,12 +194,32 @@ def update_status(movies, previous_status):
     newly_prime = []
     newly_max = []
     newly_paramount = []
+    failures = 0
 
     for movie in movies:
         mid = movie_id(movie)
         old = previous_status.get(mid, {})
 
-        avail = check_movie_availability(movie["title"], movie["year"])
+        try:
+            avail = check_movie_availability(movie["title"], movie["year"])
+        except LookupFailed as e:
+            # Keep the last known values instead of recording "unavailable".
+            print(f"[WARN] {e}; keeping previous status")
+            failures += 1
+            new_status[mid] = {
+                **old,
+                "title": movie["title"],
+                "year": movie["year"],
+                "watched": bool(movie.get("watched", False)),
+                "watched_date": movie.get("watched_date"),
+                "netflix_us": bool(old.get("netflix_us", False)),
+                "prime_us_included": bool(old.get("prime_us_included", False)),
+                "max_us": bool(old.get("max_us", False)),
+                "paramount_us_included": bool(old.get("paramount_us_included", False)),
+                "last_checked": old.get("last_checked"),
+            }
+            continue
+
         netflix = bool(avail.get("netflix_us", False))
         prime = bool(avail.get("prime_us_included", False))
         max_ = bool(avail.get("max_us", False))
@@ -210,7 +256,7 @@ def update_status(movies, previous_status):
         if paramount and not old_paramount:
             newly_paramount.append(new_entry)
 
-    return new_status, newly_netflix, newly_prime, newly_max, newly_paramount
+    return new_status, newly_netflix, newly_prime, newly_max, newly_paramount, failures
 
 
 def generate_markdown(status):
@@ -246,18 +292,28 @@ def generate_markdown(status):
             f"{icon(r['prime_us_included'])} | "
             f"{icon(r['max_us'])} | "
             f"{icon(r['paramount_us_included'])} | "
-            f"{r['last_checked']} |"
+            f"{r.get('last_checked') or 'never'} |"
         )
 
     OUTPUT_MARKDOWN.write_text("\n".join(lines) + "\n", encoding="utf-8")
 
 
 def main():
+    if not TMDB_API_KEY:
+        sys.exit("[ERROR] TMDB_API_KEY environment variable is not set")
+
     movies = load_movies()
     prev_status = load_status()
-    status, newly_netflix, newly_prime, newly_max, newly_paramount = update_status(
-        movies, prev_status
-    )
+    (
+        status, newly_netflix, newly_prime, newly_max, newly_paramount, failures
+    ) = update_status(movies, prev_status)
+
+    if movies and failures / len(movies) > MAX_FAILURE_RATIO:
+        sys.exit(
+            f"[ERROR] {failures}/{len(movies)} TMDB lookups failed; "
+            "not saving results"
+        )
+
     save_status(status)
     generate_markdown(status)
 
