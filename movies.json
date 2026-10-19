@@ -5,7 +5,6 @@
   { "title": "Moonlight", "year": 2016 },
   { "title": "Eternal Sunshine of the Spotless Mind", "year": 2004 },
   { "title": "Spirited Away", "year": 2001 },
-
   { "title": "The Zone of Interest", "year": 2023 },
   { "title": "Children of Men", "year": 2006, "watched": true  },
   { "title": "City of God", "year": 2002 },
@@ -39,8 +38,8 @@
   { "title": "Best in Show", "year": 2000 },
   { "title": "Uncut Gems", "year": 2019 },
   { "title": "Toni Erdmann", "year": 2016 },
-  { "title": "Whiplash", "year": 2014, "watched": true, "watched": true },
-  { "title": "Memento", "year": 2000, "watched": true, "watched": true  },
+  { "title": "Whiplash", "year": 2014, "watched": true },
+  { "title": "Memento", "year": 2000, "watched": true },
   { "title": "Little Miss Sunshine", "year": 2006 },
   { "title": "Gone Girl", "year": 2014 },
   { "title": "Spotlight", "year": 2015 },
