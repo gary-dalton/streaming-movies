@@ -61,6 +61,6 @@
   { "title": "The Worst Person in the World", "year": 2021 },
   { "title": "Grizzly Man", "year": 2005 },
   { "title": "Memories of Murder", "year": 2003 },
-  { "title": "CryptoZoo", "year": 2021 },
+  { "title": "CryptoZoo", "year": 2021, "watched": true },
   { "title": "Megalopolis", "year": 2024 }
 ]
