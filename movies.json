@@ -1,6 +1,6 @@
 [
   { "title": "Mulholland Drive", "year": 2001 },
-  { "title": "There Will Be Blood", "year": 2007 },
+  { "title": "There Will Be Blood", "year": 2007, "watched": true },
   { "title": "In the Mood for Love", "year": 2000 },
   { "title": "Moonlight", "year": 2016 },
   { "title": "Eternal Sunshine of the Spotless Mind", "year": 2004 },
